@@ -33,14 +33,14 @@ const Hero = () => {
           className="h-full w-full object-cover"
         />
       </Carousel>
-      
+      <div className="p-12">
       <div className="mt-8 flex justify-center text-lg font-semibold">Top Brands</div>
       
-      <div className="grid grid-cols-4 gap-6 mt-4 p-7 justify-center">
+      <div className="grid grid-cols-4 gap-8 mt-4  justify-center">
         {images.map((image, index) => (
           <div 
             key={index} 
-            className="relative w-[300px] h-[350px] overflow-hidden border rounded-lg"
+            className="relative w-[380px] h-[350px]  overflow-hidden border rounded-lg"
           >
             <img
               src={image.path}
@@ -49,7 +49,7 @@ const Hero = () => {
             />
           </div>
         ))}
-      </div>
+      </div></div>
     </div>
   )
 }
