@@ -44,7 +44,7 @@ export default async function ProductPreview({
           isFeatured={isFeatured}
         />
         <div className="mt-4">
-          <Text className="text-ui-fg-subtle" data-testid="product-title">
+          <Text className="text-ui-fg-subtle" data-testid="product-title" size="xlarge">
             {productPreview.title}
           </Text>
         </div>
